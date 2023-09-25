@@ -58,39 +58,39 @@
 
                                         <div class="form-outline mb-4">
                                             <label for="name" class="form-label">Name:</label>
-                                            <input type="text" class="form-control form-control-lg" name="Name" id="name">
-                                            @error('name')
+                                            <input  class="form-control form-control-lg" name="Name" id="Name">
+                                            @error('Name')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label for="email" class="form-label">Email:</label>
-                                            <input type="email" class="form-control form-control-lg" name="Email" id="email">
-                                            @error('email')
+                                            <input  class="form-control form-control-lg" name="Email" id="Email">
+                                            @error('Email')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label for="description" class="form-label">Address:</label>
-                                            <textarea class="form-control form-control-lg" name="Address" id="description"></textarea>
-                                            @error('description')
+                                            <textarea class="form-control form-control-lg" name="Address" id="Address"></textarea>
+                                            @error('Address')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label for="value" class="form-label">Age [2.50 - 99.99]:</label>
-                                            <input type="number" class="form-control form-control-lg" name="Age" id="value" step="0.01" min="2.50" max="99.99">
-                                            @error('value')
+                                            <input  class="form-control form-control-lg" name="Age" id="Age" step="0.01" min="2.50" max="99.99">
+                                            @error('Age')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label for="image" class="form-label">Self Portrait:</label>
-                                            <input type="file" class="form-control-file" name="image" id="file" accept=".png,.jpg,.jpeg" accept="/image">
+                                            <input type="file" class="form-control-file" name="image" id="image" accept=".png,.jpg,.jpeg" accept="/image">
                                             @error('image')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
