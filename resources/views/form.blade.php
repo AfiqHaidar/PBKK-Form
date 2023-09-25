@@ -25,7 +25,9 @@
                             <div class="card-body p-5">
 
                                 @if (session()->has('data'))
-                                    <h3 class="text-uppercase text-center mb-5">Member Card</h3>
+                                    <div class="gradient-custom-2 ">
+                                        <h3 class="text-uppercase text-center mb-5 ">Member Card</h3>
+                                    </div>
                                     <div class="row">
                                         <div class="col-md-5">
                                             @foreach (session('data') as $key => $result)
@@ -90,7 +92,7 @@
 
                                         <div class="form-outline mb-4">
                                             <label for="image" class="form-label">Self Portrait:</label>
-                                            <input type="file" class="form-control-file" name="image" id="image" accept=".png,.jpg,.jpeg" accept="/image">
+                                            <input type="file" class="form-control" name="image" id="image" accept=".png,.jpg,.jpeg" accept="/image">
                                             @error('image')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
