@@ -32,6 +32,6 @@ class FormController extends Controller
             'image' => $imageName,
         ];
 
-        return redirect('/form')->with(['data' => $results, 'status' => 'Estd. 2023']);
+        return redirect('/form')->with(['data' => $results, 'status' => 'Success | Estd. 2023']);
     }
 }
